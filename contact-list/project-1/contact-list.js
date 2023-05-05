@@ -8,7 +8,7 @@ Contact.prototype.addUsers = function (e) {
   this.str.push(e);
 };
 
-// adicionando contactos en el contrutor
+// adicionando contactos en el constructor
 newUsers = new Contact();
 newUsers.addUsers("david", "marbello");
 newUsers.addUsers("fransisco", "marbello");
@@ -25,17 +25,17 @@ Contact.prototype.dellUsers = function (users) {
   }
 };
 
+//Metodo para mostrar contactos en consola
 Contact.prototype.showUsers = function () {
   return this.str;
 };
 
-//creando objeto para adicionar usuarios
-
 //eliminando usuarios
 // newUsers.dellUsers("david");
 // newUsers.dellUsers("jose");
-// newUsers.dellUsers("fransisco");
+newUsers.dellUsers("fransisco");
 newUsers.dellUsers("maria");
 console.log(newUsers);
 
+//mostrando usuarios en consola
 console.log(newUsers.showUsers());
