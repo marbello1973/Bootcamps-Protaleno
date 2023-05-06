@@ -17,6 +17,7 @@ function Users(name, lastName, phone, city, addres) {
     addres: addres,
   };
 }
+
 //creando la funcion para almacenar los usuario
 function addUser(user, listUser) {
   listUser.push(user);
